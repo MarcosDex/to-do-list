@@ -24,7 +24,7 @@ button {
   transition: 0.4s;
 }
 .gradiant {
-  background: linear-gradient(45deg, blue, yellow, green);
+  background: linear-gradient(45deg, green, yellow, blue, white);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -249,3 +249,9 @@ const updateTodoLocalStorage = (todoOldText, todoNewText) => {
 
 loadTodos();
 
+var typed = new Typed(".typing", {
+  strings: ["To Do List"],
+  typeSpeed: 60,
+  backSpeed: 60,
+  loop: true,
+});
