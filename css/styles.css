@@ -71,9 +71,25 @@ select {
 #todo-form,
 #edit-form {
   padding: 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid rgb(255, 7, 7);
 }
-
+footer {
+  background: rgb(0, 0, 0);
+  padding: 15px 23px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+footer span a {
+  color: rgb(0, 255, 255);
+  text-decoration: none;
+}
+footer span a:hover {
+  text-decoration: underline;
+}
+#created {
+  color: red;
+}
 #todo-form p,
 #edit-form p {
   margin-bottom: 0.5rem;
