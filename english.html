@@ -18,18 +18,18 @@
   </head>
   <body>
     <div class="gradiant">
-      <a href="english.html" id="eng" data-reload>English Version</a>
+      <a href="index.html" id="index" data-reload>Back to Portuguese</a>
       <div class="todo-container">
         <header>
-          <h1><span class="typing"></span></h1>
+          <h1><span class="typeenglish"></span></h1>
         </header>
         <form id="todo-form">
-          <p>Adicione Sua tarefa</p>
+          <p>Add your task</p>
           <div class="form-control">
             <input
               type="text"
               id="todo-input"
-              placeholder="O que vai fazer hoje?"
+              placeholder="What are you going to do?"
             />
             <button type="submit">
               <i class="fa-thin fa-plus"></i>
@@ -37,23 +37,23 @@
           </div>
         </form>
         <form id="edit-form" class="hide">
-          <p>Errou em algo? não crie cranico, edite-a</p>
+          <p>Edit your task</p>
           <div class="form-control">
             <input type="text" id="edit-input" />
             <button type="submit">
               <i class="fa-solid fa-check-double"></i>
             </button>
           </div>
-          <button id="cancel-edit-btn">Cancelar</button>
+          <button id="cancel-edit-btn">Cancel</button>
         </form>
         <div id="toolbar">
           <div id="search">
-            <h4>Procurar:</h4>
+            <h4>Search:</h4>
             <form>
               <input
                 type="text"
                 id="search-input"
-                placeholder="Procure por algo..."
+                placeholder="Search for something..."
               />
               <button id="erase-button">
                 <i class="fa-solid fa-delete-left"></i>
@@ -61,11 +61,11 @@
             </form>
           </div>
           <div id="filter">
-            <h4>Filtro:</h4>
+            <h4>Filter:</h4>
             <select id="filter-select">
-              <option value="all">Todos</option>
-              <option value="done">Concluidos</option>
-              <option value="todo">A fazer</option>
+              <option value="all">All</option>
+              <option value="done">Dones</option>
+              <option value="todo">To do</option>
             </select>
           </div>
         </div>
@@ -74,11 +74,18 @@
     </div>
     <footer>
       <span id="created"
-        >Criado Por
+        >Created By
         <a href="https://github.com/MarcosDex?tab=repositories">WalkerAway</a> |
-        <span class="far fa-copyright"></span> 2022 Todos os Direitos
-        Reservados.</span
+        <span class="far fa-copyright"></span> 2022 All rights reserved.</span
       >
     </footer>
+    <script>
+      var typed = new Typed(".typeenglish", {
+        strings: ["To Do List"],
+        typeSpeed: 60,
+        backSpeed: 60,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
